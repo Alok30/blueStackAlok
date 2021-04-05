@@ -1,0 +1,65 @@
+
+.modal {
+    position: fixed;
+    top: 50px !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1050;
+    display: block !important;
+    background-color: whitesmoke;
+    width: 50% !important;
+    height: 412px  !important;
+    overflow: hidden;
+    outline: 0;
+    max-width: 460px;
+    padding: 10px;
+    background: #FFFFFF;
+    border : 1p solid #CCCCCC;
+    box-shadow:0 0 0 1000px rgba(0,0,0,0.6);
+}
+.modal.off {
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(8px);
+  transform: scale(0.33);
+  box-shadow: 1rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-reduced-motion) {
+  .modal {
+    offset-path: none;
+  }
+}
+.modal h2 {
+font-size: 16px;
+  padding: 1rem;
+  margin: 0;
+  vertical-align: bottom;
+}
+modal img {
+    vertical-align: bottom;
+}
+.modal .content {
+  padding: 10px;
+}
+.modal .content h2 {
+    font-weight: 600;
+   font-size: 1.6em;
+  }
+.modal .actions {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.modal .actions button {
+  border: 0;
+  background: #78f89f;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+#centered-toggle-button {
+  position: absolute;
+}
